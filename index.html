@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfólio - Lucas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menu -->
+    <nav>
+        <a href="#" onclick="mostrar('sobre')">Sobre mim</a>
+        <a href="#" onclick="mostrar('formacao')">Formação</a>
+        <a href="#" onclick="mostrar('portfolio')">Portfólio</a>
+        <a href="#" onclick="mostrar('contato')">Contato</a>
+    </nav>
+
+    <!-- Informações -->
+    <div id="sobre">
+        <h2>Sobre mim</h2>
+        <p>Meu nome é Lucas do Nascimento Fonseca. Gosto de jogar, assistir séries e filmes, e pedalar. Ex Militar do Exército Brasileiro,
+            Alcancei a graduação de Cabo, e atualmente estou cursando análise e desenvolvimento de sistemas</p>
+    </div>
+    <div id="formacao" style="display:none">
+        <h2>Formação</h2>
+        <p>Marketing Digital e Técnico em Enfermagem.</p>
+    </div>
+    <div id="portfolio" style="display:none">
+        <h2>Portfólio</h2>
+        <p>Até o momento, não tenho projetos para mostrar, mas aqui está um exemplo de trabalho realizado:</p>
+        <img src="TrabalhoBancodeDados.png" alt="Trabalho Banco de Dados" width="300">
+    </div>
+    <div id="contato" style="display:none">
+        <h2>Contato</h2>
+        <!-- Formulário -->
+        <form>
+            <label>Nome:</label>
+            <input type="text">
+            <label>Email:</label>
+            <input type="email">
+            <label>Mensagem:</label>
+            <textarea></textarea>
+            <button type="button" disabled>Enviar</button>
+        </form>
+        <p style="font-size:12px; color:#888;">.</p>
+    </div>
+
+    <!-- Troca de Menu -->
+    <script>
+    function mostrar(secao) {
+        document.getElementById('sobre').style.display = 'none';
+        document.getElementById('formacao').style.display = 'none';
+        document.getElementById('portfolio').style.display = 'none';
+        document.getElementById('contato').style.display = 'none';
+        document.getElementById(secao).style.display = 'block';
+    }
+    </script>
+</body>
+</html> 
